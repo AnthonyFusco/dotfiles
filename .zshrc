@@ -29,6 +29,7 @@ plugins=(
   colored-man-pages
   docker
   spring
+  alias-tips
 )
 
 source $ZSH/oh-my-zsh.sh

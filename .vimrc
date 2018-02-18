@@ -98,4 +98,7 @@
 
  set spell
  set number
- set clipboard=unnamedplus
+" set clipboard=unnamedplus
+noremap <leader>y "*y
+noremap <leader>yy "*Y
+
