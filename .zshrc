@@ -3,6 +3,7 @@
 export PATH="$HOME/commands/paStormTerm/:$HOME/commands/personal-commands/:$PATH";
 
 if [ "$TMUX" = "" ]; then tmux a; fi
+if [ "$TMUX" = "" ]; then tmux; fi
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/afusco/.oh-my-zsh
@@ -17,7 +18,7 @@ DISABLE_AUTO_TITLE="true"
 #ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+#COMPLETION_WAITING_DOTS="true"
 
 plugins=(
   git

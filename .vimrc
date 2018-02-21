@@ -4,12 +4,23 @@
  filetype off
 
  " TODO: Load plugins here (pathogen or vundle)
+ set rtp+=~/.vim/bundle/Vundle.vim
+ call vundle#begin() 
+ 
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
- " Turn on syntax highlighting
+" add all your plugins here (note older versions of Vundle
+" used Bundle instead of Plugin)
+
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" Turn on syntax highlighting
  syntax on
-
- " For plugins to load correctly
- filetype plugin indent on
 
  " TODO: Pick a leader key
  let mapleader = ","
@@ -33,11 +44,13 @@
  set wrap
  set textwidth=79
  set formatoptions=tcqrn1
- set tabstop=2
- set shiftwidth=2
- set softtabstop=2
+ set tabstop=4
+ set shiftwidth=4
+ set softtabstop=4
  set expandtab
  set noshiftround
+ set autoindent
+ let g:ycm_autoclose_preview_window_after_completion=1
 
  " Cursor motion
  set scrolloff=3
@@ -99,6 +112,6 @@
  set spell
  set number
 " set clipboard=unnamedplus
-noremap <leader>y "*y
-noremap <leader>yy "*Y
+ noremap <leader>y "*y
+ noremap <leader>yy "*Y
 
