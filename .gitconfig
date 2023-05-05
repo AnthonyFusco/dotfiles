@@ -1,6 +1,0 @@
-[user]
-	name = Anthony Fusco
-	email = anthony.fusco42@gmail.com
-[core]
-	editor = vim
-	excludesfile = /home/afusco/.dotfiles/gitignore_global
